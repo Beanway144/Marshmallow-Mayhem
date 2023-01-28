@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<script>
+    function clickinner(target) { // Target refers to the clicked element
+        const numPlayers = document.getElementById('numPlayers').value;
+        const prompt = document.getElementById('prompt').value;
+        sessionStorage.setItem('numPlayers', numPlayers);
+        sessionStorage.setItem('prompt', prompt)
+        location.href = './game.html';
+    };
+</script>
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,25 +21,21 @@
 
 <body>
     <h1 id="title">Flickering Fables</h1>
-    <div class="htp" class="container">
+    <div class="htp" class="container" style="overflow-y:scroll;">
         <h2>How To Play</h2>
-        [description here]
     </div>
     <div class="start" class="container">
         <h2>Settings</h2>
-            <label for="prompts">Length:</label>
-            <select name="prompts" id="prompts">
-                <option value="1">None</option>
-                <option value="2">Random</option>
+            <label for="numPlayers">Number of people in group:</label>
+            <input id="numPlayers" name="numPlayers" type="number" value=4>
+            <br/>
+            <label for="prompt">Starting Prompt:</label>
+            <select name="prompt" id="prompt">
+                <option>Once upon a time...</option>
+                <option>Random</option>
             </select>
             <br/>
-            <label for="prompts">Starting Prompt:</label>
-            <select name="prompts" id="prompts">
-                <option value="none">None</option>
-                <option value="random">Random</option>
-            </select>
-            <br/>
-            <button>Start!</button>
+            <button onClick="javascript:clickinner(this);">Start!</button>
     </div>
 </body>
 

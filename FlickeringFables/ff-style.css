@@ -9,19 +9,21 @@
 } */
 
 #title {
-    text-align: center ;
+    text-align: center;
+    background-color: chocolate;
 }
 
 div {
     text-align: center;
     align-items: center;
     justify-content: center;
-    height: 500px;
+    height: 750px;
     width: 50%;
 }
 
 .htp {
     float: left;
+    background-color: #9e2835;
 }
 
 .start {
