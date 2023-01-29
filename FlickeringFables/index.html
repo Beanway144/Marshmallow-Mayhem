@@ -23,18 +23,35 @@
     <h1 id="title">Flickering Fables</h1>
     <div class="htp" class="container" style="overflow-y:scroll;">
         <h2>How To Play</h2>
+        <p>
+            The object of this game is for you and your group to create an 
+            interesting story by each writing one or two lines of it - but 
+            there's a twist: you don't know exactly what everyone else wrote! 
+            Each person will take turns writing a few lines of the story. After 
+            hitting the "submit" button, you then pass the computer to the next
+            group member. The next group member will be able to see what you 
+            wrote, but a few words will be missing to add some mystery. They 
+            will then try to continue the story. At the end of the game, 
+            everyone gets to read the final result!
+        </p>
+        <p>
+            To get started, select the number of people in your group on the 
+            right. We recommend larger groups for the best possible experience!
+            Then, select your prompt for some inspiration. Once you're ready,
+            hit Start!
+        </p>
     </div>
     <div class="start" class="container">
         <h2>Settings</h2>
-            <label for="numPlayers">Number of people in group:</label>
+            <label for="numPlayers">Number of people in group:&ensp;</label>
             <input id="numPlayers" name="numPlayers" type="number" value=4>
-            <br/>
-            <label for="prompt">Starting Prompt:</label>
+            <br/><br/><br/>
+            <label for="prompt">Starting Prompt:&ensp;</label>
             <select name="prompt" id="prompt">
                 <option>Once upon a time...</option>
                 <option>Random</option>
             </select>
-            <br/>
+            <br/><br/><br/>
             <button onClick="javascript:clickinner(this);">Start!</button>
     </div>
 </body>

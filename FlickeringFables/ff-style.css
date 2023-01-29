@@ -1,16 +1,21 @@
-/* body {
-    margin: 40px auto;
-    max-width: 650px;
-    line-height: 1.6;
+@font-face {
+    font-family: Bungee;
+    src: url(../Bungee-Regular.ttf);
+}
+
+body {
+    background-color: #1E1E1E;
+    color: #EEEEEE;
+    font-family: Bungee;
+    text-align: center;
+}
+
+textarea {
     font-size: 18px;
-    color: #444;
-    padding: 0 10px;
-    background-color: #EEEEEE;
-} */
+}
 
 #title {
     text-align: center;
-    background-color: chocolate;
 }
 
 div {
@@ -18,12 +23,23 @@ div {
     align-items: center;
     justify-content: center;
     height: 750px;
-    width: 50%;
+    width: 46%;
+    padding: 2%;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+button {
+    height: 6%;
+    width: 12%;
+    font-size: 18px;
 }
 
 .htp {
     float: left;
-    background-color: #9e2835;
 }
 
 .start {

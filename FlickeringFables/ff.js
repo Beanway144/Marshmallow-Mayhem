@@ -35,10 +35,9 @@ function endgame() {
     arr.forEach(function(element) {element.remove()});
     document.getElementById('story').textContent = "Your Story:"
     document.getElementById('previous').textContent = story;
-    document.getElementById('endgame').innerHTML = '<button onClick="location.reload()">Reset</button>'
 }
 
-document.getElementById('submit').onclick = function() {
+function submit() {
     response = document.getElementById('response');
     story += " " + response.value;
     

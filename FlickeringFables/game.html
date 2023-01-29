@@ -4,18 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ff-style.css">
     <title>Flickering Fables</title>
 </head>
 <body>
     <h1 id="title">Flickering Fables</h1>
     <h2 id="turns" class="removeAtEnd"></h2>
-    <h2 id="prompt"></h2>
-    <h3 id="story">Previous entry:</h3>
+    <h3 id="prompt"></h2>
+    <h4 id="story">Previous entry:</h3>
     <p id="previous"></p>
     <textarea id="response" rows="5" cols="50" class="removeAtEnd"></textarea>
-    <input id="submit" type="submit" value="Submit" class="removeAtEnd">
-    <br/>
-    <button id="endgame" onClick="endgame()">End game</button>
+    <br/><br/>
+    <button id="submit" onClick="submit()" class="removeAtEnd">Submit</button>
+    <br/><br/>
+    <button id="endgame" onClick="endgame()" class="removeAtEnd">End game</button>
+    <br/><br/>
+    <button id="reset" onClick="location.reload()">Reset</button>
     <script src="ff.js"></script>
 </body>
 </html>
