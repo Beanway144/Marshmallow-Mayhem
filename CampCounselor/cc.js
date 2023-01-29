@@ -27,13 +27,13 @@ var intros = [
 var facts = [
     [" Just to break the ice, I'd like to tell a story about my childhood. When I was 7, I was ", VERB, " my favorite ", NOUN, " when I was approched by a stranger who asked me ", QUESTION, "."],
     [" Here's a fun fact about me: everyday I ", VERBN, " with my ", NOUN, " out. Now, I know what you're thinking: ", QUESTION, ". But don't worry, you'll find out over this next very ", ADJECTIVE, " week!"],
-    [" I want to use my time up here in front of you to share a little poem I wrote: \nRoses are red, \nViolets are ", ADJECTIVE, " , \n", QUESTION, "/n"],
+    [" I want to use my time up here in front of you to share a little poem I wrote: \nRoses are red, \nViolets are ", ADJECTIVE, " , \n", QUESTION, "\n"],
     [" One little fact about me is that I extremely afraid of ", FEAR, ". But I'm even more scared of ", FEAR, "."],
     [" My favorite food is ", NOUN, ". I can't go a single day without putting my tastebuds on those ", ADJECTIVE, " things."]
 ]
 var rules = [
-    ["Alright, now for a serious note. I only have one rule: ", RULE],
-    ["I'm pretty ", ADJECTIVE, ". I only have one rule for you guys: ", RULE]
+    ["Alright, now for a serious note. I only have one rule: ", RULE, ". "],
+    ["I'm pretty ", ADJECTIVE, ". I only have one rule for you guys: ", RULE, ". "]
 ]
 var closings = [
     ["I'm super ", ADJECTIVE, " to be your counselor, and look forward to seeing you all ", VERB, "!"],
@@ -182,6 +182,7 @@ function endRound() {
     var done_button = document.createElement("button")
     done_button.setAttribute('id', 'done-button')
     done_button.setAttribute('onClick', 'goToEndPage()')
+    done_button.innerHTML = "Let's Go!"
     eg.appendChild(done_button)
 }
 
@@ -199,4 +200,3 @@ function startGame() {
     startTurn(0)
 }
 startGame()
-//function on button: read in input ;turn += 1; startTurn(turn)

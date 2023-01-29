@@ -1,0 +1,255 @@
+@font-face {
+    font-family: Bungee;
+    src: url(Bungee-Regular.ttf);
+}
+
+#title {
+    /* Marshmallow Mayhem */
+
+    position: absolute;
+    width: 979px;
+    height: 90px;
+    left: 179px;
+    top: 20px;
+
+    font-family: Bungee;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 74.9807px;
+    line-height: 90px;
+
+    /* identical to box height */
+
+    background: radial-gradient(93.31% 11040.94% at 93.31% 80%, #E6D0AF 0%, #FFFFFF 100%)
+        /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+    ;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    /* text-fill-color: transparent; */
+
+    text-shadow: 0px 5.99846px 5.99846px rgba(0, 0, 0, 0.25), 0px 5.99846px 5.99846px rgba(0, 0, 0, 0.25);
+}
+
+body {
+    background: #1E1E1E;
+}
+
+#campfire {
+
+    position: absolute;
+    width: 21.5%;
+    height: 45%;
+    left: 38%;
+    top: 37%;
+}
+
+
+#ff-marsh {
+    /* Rectangle 2 */
+
+    position: absolute;
+    width: 11.6%;
+    height: 12.1%;
+    left: 28.9%;
+    top: 34.7%;
+
+    background: radial-gradient(56.07% 129.91% at 100.71% 96.18%, #D0B595 0%, #FFFFFF 100%)
+        /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+    ;
+    box-shadow: 0px 5.99846px 5.99846px rgba(0, 0, 0, 0.25), 0px 5.99846px 5.99846px rgba(0, 0, 0, 0.25);
+    border-radius: 14.9961px;
+    transform: matrix(0.98, -0.2, 0.23, 0.97, 0, 0);
+}
+
+#cc-marsh {
+    /* Rectangle 1 */
+
+    position: absolute;
+    width: 10.6%;
+    height: 11.1%;
+    left: 58.4%;
+    top: 26.2%;
+
+    background: radial-gradient(49.64% 97.13% at 0.36% 104.11%, #C4A982 0%, #FFFFFF 100%)
+        /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+    ;
+    box-shadow: 0px 5.99846px 5.99846px rgba(0, 0, 0, 0.25), 0px 5.99846px 5.99846px rgba(0, 0, 0, 0.25);
+    border-radius: 14.9961px;
+    transform: matrix(0.99, 0.13, -0.12, 0.99, 0, 0);
+}
+
+#about-marsh {
+    /* Rectangle 6 */
+
+    position: absolute;
+    width: 10.6%;
+    height: 11.1%;
+    left: 25%;
+    top: 55%;
+
+    background: radial-gradient(48.91% 120.57% at 3.54% 37.19%, #CFAB66 0%, #FFFFFF 100%)
+        /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+    ;
+    box-shadow: 0px 5.99846px 5.99846px rgba(0, 0, 0, 0.25), 0px 5.99846px 5.99846px rgba(0, 0, 0, 0.25);
+    border-radius: 14.9961px;
+    transform: matrix(-0.99, 0.17, -0.18, -0.98, 0, 0);
+}
+
+#source-marsh {
+    /* Rectangle 8 */
+
+    position: absolute;
+    width: 10.6%;
+    height: 11.1%;
+    left: 63%;
+    top: 53%;
+
+    background: radial-gradient(84.14% 132.98% at 100.59% 10.94%, #655846 0%, #6F5836 0.01%, #D1C1A7 50%, #FFFFFF 100%)
+        /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+    ;
+    box-shadow: 0px 5.99846px 5.99846px rgba(0, 0, 0, 0.25), 0px 5.99846px 5.99846px rgba(0, 0, 0, 0.25);
+    border-radius: 14.9961px;
+    transform: matrix(-0.99, -0.12, 0.09, -1, 0, 0);
+}
+
+
+#cc {
+    /* Camp Counselor */
+
+    position: absolute;
+    width: 139.66px;
+    height: 66.21px;
+    left: 58.6%;
+    top: 28.7%;
+
+    font-family: Bungee;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #444444;
+
+    transform: matrix(0.99, 0.13, -0.12, 0.99, 0, 0);
+}
+
+#ff {
+    /* Flickering Fables */
+
+    position: absolute;
+    width: 11.3%;
+    height: 7.6%;
+    left: 29.3%;
+    top: 37%;
+
+    font-family: Bungee;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #444444;
+
+    transform: matrix(0.97, -0.23, 0.24, 0.97, 0, 0);
+}
+
+#about {
+    /* About */
+
+    position: absolute;
+    width: 105.36px;
+    height: 53.3px;
+    left: 27%;
+    top: 58%;
+
+    font-family: Bungee;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #444444;
+
+    transform: matrix(0.98, -0.18, 0.19, 0.98, 0, 0);
+}
+
+#source {
+    /* Source */
+
+    position: absolute;
+    width: 109.42px;
+    height: 43.18px;
+    left: 64%;
+    top: 56%;
+
+    font-family: Bungee;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #444444;
+
+    transform: matrix(0.99, 0.1, -0.09, 1, 0, 0);
+}
+
+#ff-stick {
+
+    position: absolute;
+    width: 45.2%;
+    height: 1%;
+    left: -1.5%;
+    top: 42.7%;
+
+    background: #613B19;
+    box-shadow: 0px 5.99846px 5.99846px rgba(0, 0, 0, 0.25), 0px 5.99846px 5.99846px rgba(0, 0, 0, 0.25);
+    transform: matrix(0.98, -0.2, 0.23, 0.97, 0, 0);
+}
+
+#cc-stick {
+
+    position: absolute;
+    width: 44.2%;
+    height: 1%;
+    left: 55.2%;
+    top: 31.6%;
+
+    background: #613B19;
+    box-shadow: 0px 5.99846px 5.99846px rgba(0, 0, 0, 0.25), 0px 5.99846px 5.99846px rgba(0, 0, 0, 0.25);
+    transform: matrix(0.99, 0.13, -0.12, 0.99, 0, 0);
+}
+
+#about-stick {
+
+    position: absolute;
+    width: 40.2%;
+    height: 1%;
+    left: 0;
+    top: 61.1%;
+
+    background: #613B19;
+    box-shadow: 0px 5.99846px 5.99846px rgba(0, 0, 0, 0.25), 0px 5.99846px 5.99846px rgba(0, 0, 0, 0.25);
+    transform: matrix(-0.99, 0.17, -0.18, -0.98, 0, 0);
+}
+
+#source-stick {
+
+    position: absolute;
+    width: 39.2%;
+    height: 1%;
+    left: 60.9%;
+    top: 59.8%;
+
+    background: #613B19;
+    box-shadow: 0px 5.99846px 5.99846px rgba(0, 0, 0, 0.25), 0px 5.99846px 5.99846px rgba(0, 0, 0, 0.25);
+    transform: matrix(-0.99, -0.12, 0.09, -1, 0, 0);
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}

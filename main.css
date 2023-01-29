@@ -1,0 +1,60 @@
+body {
+    margin: 40px auto;
+    max-width: 650px;
+    line-height: 1.6;
+    font-size: 18px;
+    color: #444;
+    padding: 0 10px;
+    background-color: #EEEEEE;
+}
+
+#campfire {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+}
+
+#title {
+    text-align: center;
+}
+
+/* div {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    width: 50%;
+} */
+
+.htp {
+    float: left;
+}
+
+.start {
+    float: right;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1.2
+}
+
+a:link {
+    color: #9e2835;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #9e2835;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(41, 22, 22);
+    background-color: transparent;
+    text-decoration: underline;
+}

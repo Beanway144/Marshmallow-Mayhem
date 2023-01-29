@@ -20,15 +20,40 @@
 
 <body>
     <h1 id="title">Camp Counselor</h1>
+    <div id="whole-container">
     <div class="htp" class="container">
         <h2>How To Play</h2>
-        [description here]
+        <p style="text-align: left">
+            Welcome to the first day of summer camp! The game starts with 3 to 10 players sitting in a circle. Choose
+            one
+            person to be the first counselor (or if nobody volunteers, choose the last person who has been camping).
+            Give
+            the
+            counselor the device to setup the game (on the right). When everyone is ready, the counselor hits 'Start!'
+            and
+            passes the device to the player to their left.
+        </p>
+        <p style="text-align: left">
+            Each camper will be prompted with a series of input boxes asking for words or phrases (nouns, adjectives,
+            questions, etc.). Campers submit their answers by hitting the "Done!" button, then passing the device to
+            their right. After all campers submit their responses, the device returns to the counselor.
+        </p>
+        <p style="text-align: left">
+            The counselor stands in front of the campers and delivers the introduction given to them. While the
+            counselor gives their introduction, the goal of the game is to not laugh. The first person to laugh (camper
+            or counselor) is eliminated.
+        </p>
+        <p style="text-align: left">
+            After each round, the player to the right of the counselor is the new counselor, and the game continues
+            until all but one of the players have been eliminated.
+        </p>
     </div>
     <div class="start" class="container">
         <h2>Settings</h2>
-        <label for="players">Players:</label>
+        <br/>
+        <label for="players">Players: &ensp; &ensp;</label>
         <select name="players" id="players">
-            <option value="" selected disabled hidden>Choose</option>
+            <option value="" selected disabled hidden>o</option>
             <option value="3">3</option>
             <option value="4">4</option>
             <option value="5">5</option>
@@ -38,9 +63,13 @@
             <option value="9">9</option>
             <option value="10">10</option>
         </select>
+        <br/>
         <br />
-        <button onClick="javascript:clickinner(this);">Start!</button>
+        <br />
+        <button onClick="javascript:clickinner(this);" id="start-button">Start!</button>
     </div>
+</div>
+
 </body>
 
 </html>
