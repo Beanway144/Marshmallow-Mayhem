@@ -67,3 +67,36 @@ a:hover {
     background-color: transparent;
     text-decoration: underline;
 }
+
+#start-button {
+    width: 20%;
+    height: 10%;
+    font-size: 18px;
+    font-family: Bungee;
+    background-color: #EEEEEE;
+    color:rgb(41, 22, 22);
+    border-radius: 8px;
+}
+
+select {
+    color: #1E1E1E;
+    border-radius: 8px;
+    background-color: #EEEEEE;
+    cursor: pointer;
+    font-family: Bungee;
+    padding: 3px;
+}
+
+#numPlayers {
+    color: #1E1E1E;
+    border-radius: 8px;
+    background-color: #EEEEEE;
+    cursor: pointer;
+    font-family: Bungee;
+    padding: 3px;
+    width: 50px
+}
+
+textarea {
+    background: #e1e1e1
+}
