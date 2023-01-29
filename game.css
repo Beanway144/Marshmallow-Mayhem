@@ -59,7 +59,8 @@ select {
 
 .htp {
     float: left;
-    border: 1px solid #444
+    border: 1px solid rgb(118, 118, 118);
+    border-radius: 10px
 }
 
 .start {
