@@ -5,7 +5,7 @@ document.getElementById('prompt').textContent = prompt;
 document.getElementById('previous').textContent = prompt;
 
 var turnsLeft = Math.max(10, numPlayers)
-document.getElementById('turns').textContent = "Turns remaining: " + turnsLeft
+document.getElementById('turns').innerHTML = "Turns remaining:&ensp;" + turnsLeft
 var story = "";
 const prev = document.getElementById('previous');
 
@@ -66,7 +66,7 @@ function submit() {
     prev.textContent = arr.join(" ");
     response.value = "";
 
-    document.getElementById('turns').textContent = "Turns remaining: " + --turnsLeft
+    document.getElementById('turns').innerHTML = "Turns remaining:&ensp;" + --turnsLeft
 
     if (turnsLeft == 0) {
         endgame();
