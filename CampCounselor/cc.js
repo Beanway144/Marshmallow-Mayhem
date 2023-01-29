@@ -19,17 +19,17 @@ console.log("Player Count:" + playerCount)
 var container = document.getElementById('input-container')
 
 var intros = [
-    ["Good morning, campers! My name is ", NAME, " and I'll be your counselor this week. I'm excited to have lots of ", ADJECTIVE, NOUN, " here at Camp ", NOUN, "!"],
+    ["Good morning, campers! My name is ", NAME, " and I'll be your counselor this week. I'm excited to have lots of ", ADJECTIVE, " ", NOUN, " here at Camp ", NOUN, "!"],
     [GREETING, " My name is ", NAME, ". We're going to have lot's of fun this week. We'll start off the week by watching me ", VERB, ". But only if all you campers are ", ADJECTIVE, "!"],
     ["Hey, I'm ", NAME, ". I'm only here because I was wondering ", QUESTION, "I thought about the answer to that while I was ", VERB, ", and after some serious thought, I realized I would find the answer here at Camp ", NOUN, "." ],
 
 ]
 var facts = [
-    [" Just to break the ice, I'd like to tell a story about my childhood. When I was 7, I was ", VERB, " my favorite ", NOUN, " when I was approched by a stranger who asked me ", QUESTION, "."],
-    [" Here's a fun fact about me: everyday I ", VERBN, " with my ", NOUN, " out. Now, I know what you're thinking: ", QUESTION, ". But don't worry, you'll find out over this next very ", ADJECTIVE, " week!"],
+    [" Just to break the ice, I'd like to tell a story about my childhood. When I was 7, I was ", VERB, " my favorite ", NOUN, " when I was approched by a stranger who asked me ", QUESTION, ". "],
+    [" Here's a fun fact about me: everyday I ", VERBN, " with my ", NOUN, " out. Now, I know what you're thinking: ", QUESTION, ". But don't worry, you'll find out over this next very ", ADJECTIVE, " week! "],
     [" I want to use my time up here in front of you to share a little poem I wrote: \nRoses are red, \nViolets are ", ADJECTIVE, " , \n", QUESTION, "\n"],
-    [" One little fact about me is that I extremely afraid of ", FEAR, ". But I'm even more scared of ", FEAR, "."],
-    [" My favorite food is ", NOUN, ". I can't go a single day without putting my tastebuds on those ", ADJECTIVE, " things."]
+    [" One little fact about me is that I extremely afraid of ", FEAR, ". But I'm even more scared of ", FEAR, ". "],
+    [" My favorite food is ", NOUN, ". I can't go a single day without putting my tastebuds on those ", ADJECTIVE, " things. "]
 ]
 var rules = [
     ["Alright, now for a serious note. I only have one rule: ", RULE, ". "],
@@ -64,47 +64,48 @@ function makeInput(part_of_speech) {
     inp = document.createElement("input")
     inp.setAttribute('type', 'text');
     inp.setAttribute('class', 'story-input')
+    inp.setAttribute('style', 'width: 80%; border-radius: 5px;')
     switch (part_of_speech) {
         case NOUN:
-            inp.setAttribute('value', 'Noun');
+            inp.setAttribute('placeholder', 'Noun');
             container.appendChild(inp)
             break;
         case VERB:
-            inp.setAttribute('value', 'Verb (ending in -ing)');
+            inp.setAttribute('placeholder', 'Verb (ending in -ing)');
             container.appendChild(inp)
             break;
         case NAME:
-            inp.setAttribute('value', 'Name (of a person)');
+            inp.setAttribute('placeholder', 'Name (of a person)');
             container.appendChild(inp)
             break;
         case ADJECTIVE:
-            inp.setAttribute('value', 'Adjective');
+            inp.setAttribute('placeholder', 'Adjective');
             container.appendChild(inp)
             break;
         case ADVERB:
-            inp.setAttribute('value', 'Adverb');
+            inp.setAttribute('placeholder', 'Adverb');
             container.appendChild(inp)
             break;
         case GREETING:
-            inp.setAttribute('value', 'Greeting');
+            inp.setAttribute('placeholder', 'Greeting');
             container.appendChild(inp)
             break;
         case RULE:
             s = rulePrompts[Math.floor(Math.random() * rulePrompts.length)]
-            inp.setAttribute('value', s);
+            inp.setAttribute('placeholder', s);
             container.appendChild(inp)
             break;
         case QUESTION:
             s = questionPrompts[Math.floor(Math.random() * questionPrompts.length)]
-            inp.setAttribute('value', s);
+            inp.setAttribute('placeholder', s);
             container.appendChild(inp)
             break;
         case FEAR:
-            inp.setAttribute('value', 'An irrational fear');
+            inp.setAttribute('placeholder', 'An irrational fear');
             container.appendChild(inp)
             break;
         case VERBN:
-            inp.setAttribute('value', 'Verb (not ending in -ing)');
+            inp.setAttribute('placeholder', 'Verb (not ending in -ing)');
             container.appendChild(inp)
             break;
     }
